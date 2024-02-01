@@ -64,6 +64,7 @@ const Tasks = () => {
       return newItems;
     });
   };
+  
   const isDone = (id) => {
     const draggedTask = taskList.find((task) => task.id === id);
     draggedTask.status = "DONE";
